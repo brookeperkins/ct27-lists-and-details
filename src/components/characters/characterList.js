@@ -13,7 +13,7 @@ export default class Character extends Component {
   }
 
   render() {
-    const characterDetails = this.state.characters.map(character => (
+    const thisCharacter = this.state.characters.map(character => (
       <li key={character._id}>
         <a href={`/${character._id}`}>
           <h2>{character.name}</h2>
@@ -25,7 +25,7 @@ export default class Character extends Component {
     return (
       <>
         <ul>
-          {characterDetails}
+          {thisCharacter}
         </ul>
       </>
     );

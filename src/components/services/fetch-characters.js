@@ -4,3 +4,9 @@ export const fetchCharacters = () => {
     .then(res => res.json())
     .catch(error => console.log('error', error));
 };
+
+export const getDetails = (_id) => {
+  return fetch(`https://hey-arnold-api.herokuapp.com/api/v1/characters/${_id}`)
+    .then(response => response.json())
+    .catch(error => console.log('error', error));
+};
