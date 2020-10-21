@@ -16,9 +16,7 @@ export default class Character extends Component {
     const thisCharacter = this.state.characters.map(character => (
       <li key={character._id}>
         <a href={`/${character._id}`}>
-          <h2>{character.name}</h2>
-          <img src={character.image}></img>
-        </a>
+          <h2>{character.name}</h2>        </a>
       </li>
     ));
 
